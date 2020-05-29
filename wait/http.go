@@ -74,7 +74,7 @@ func (ws *HTTPStrategy) WithAllowInsecure(allowInsecure bool) *HTTPStrategy {
 }
 
 // ForHTTP is a convenience method similar to Wait.java
-// https://github.com/testcontainers/testcontainers-java/blob/1d85a3834bd937f80aad3a4cec249c027f31aeb4/core/src/main/java/org/testcontainers/containers/wait/strategy/Wait.java
+// https://github.com/yext/testcontainers-java/blob/1d85a3834bd937f80aad3a4cec249c027f31aeb4/core/src/main/java/org/yext/containers/wait/strategy/Wait.java
 func ForHTTP(path string) *HTTPStrategy {
 	return NewHTTPStrategy(path)
 }

@@ -23,7 +23,7 @@ container is created. You can call it in your test or you use `defer` .
 
 ## Ryuk
 
-[https://github.com/testcontainers/moby-ryuk](ryuk) helps you to remove
+[https://github.com/yext/moby-ryuk](ryuk) helps you to remove
 containers/networks/volumes by given filter after specified delay.
 
 It is a project developer by TestContainer and it is used across the board for

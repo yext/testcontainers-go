@@ -9,7 +9,7 @@ import (
 	"github.com/docker/docker/pkg/archive"
 	"github.com/docker/go-connections/nat"
 	"github.com/pkg/errors"
-	"github.com/testcontainers/testcontainers-go/wait"
+	"github.com/yext/testcontainers-go/wait"
 )
 
 // DeprecatedContainer shows methods that were supported before, but are now deprecated

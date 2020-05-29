@@ -35,7 +35,7 @@ func NewHostPortStrategy(port nat.Port) *HostPortStrategy {
 // this is true for all properties, even the "shared" ones like startupTimeout
 
 // ForListeningPort is a helper similar to those in Wait.java
-// https://github.com/testcontainers/testcontainers-java/blob/1d85a3834bd937f80aad3a4cec249c027f31aeb4/core/src/main/java/org/testcontainers/containers/wait/strategy/Wait.java
+// https://github.com/yext/testcontainers-java/blob/1d85a3834bd937f80aad3a4cec249c027f31aeb4/core/src/main/java/org/yext/containers/wait/strategy/Wait.java
 func ForListeningPort(port nat.Port) *HostPortStrategy {
 	return NewHostPortStrategy(port)
 }

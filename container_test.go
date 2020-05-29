@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/testcontainers/testcontainers-go/wait"
+	"github.com/yext/testcontainers-go/wait"
 )
 
 func Test_ContainerValidation(t *testing.T) {

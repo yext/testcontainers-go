@@ -10,7 +10,7 @@ This is way Docker has to be available for this library to work.
 We use [gomod](https://blog.golang.org/using-go-modules) and you can get it installed via:
 
 ```
-go get github.com/testcontainers/testcontainers-go
+go get github.com/yext/testcontainers-go
 ```
 
 ## 2. Spin up Redis

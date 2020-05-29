@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/testcontainers/testcontainers-go.svg?branch=master)](https://travis-ci.org/testcontainers/testcontainers-go)
+[![Build Status](https://travis-ci.org/yext/testcontainers-go.svg?branch=master)](https://travis-ci.org/yext/testcontainers-go)
 
 When I was working on a Zipkin PR I discovered a nice Java library called
 [testcontainers](https://www.testcontainers.org/).
@@ -20,8 +20,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/testcontainers/testcontainers-go"
-	"github.com/testcontainers/testcontainers-go/wait"
+	"github.com/yext/testcontainers-go"
+	"github.com/yext/testcontainers-go/wait"
 )
 
 func TestNginxLatestReturn(t *testing.T) {

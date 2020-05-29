@@ -5,7 +5,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/docker/go-connections/nat"
-	"github.com/testcontainers/testcontainers-go/wait"
+	"github.com/yext/testcontainers-go/wait"
 	"net"
 	"strings"
 	"sync"

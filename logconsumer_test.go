@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/testcontainers/testcontainers-go/wait"
+	"github.com/yext/testcontainers-go/wait"
 	"gotest.tools/assert"
 )
 

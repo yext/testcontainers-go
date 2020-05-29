@@ -27,7 +27,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
 
-	"github.com/testcontainers/testcontainers-go/wait"
+	"github.com/yext/testcontainers-go/wait"
 )
 
 // Implement interfaces
@@ -748,7 +748,7 @@ func (p *DockerProvider) GetNetwork(ctx context.Context, req NetworkRequest) (ty
 }
 
 func inAContainer() bool {
-	// see https://github.com/testcontainers/testcontainers-java/blob/3ad8d80e2484864e554744a4800a81f6b7982168/core/src/main/java/org/testcontainers/dockerclient/DockerClientConfigUtils.java#L15
+	// see https://github.com/yext/testcontainers-java/blob/3ad8d80e2484864e554744a4800a81f6b7982168/core/src/main/java/org/yext/dockerclient/DockerClientConfigUtils.java#L15
 	if _, err := os.Stat("/.dockerenv"); err == nil {
 		return true
 	}
@@ -756,7 +756,7 @@ func inAContainer() bool {
 }
 
 func getGatewayIp() (string, error) {
-	// see https://github.com/testcontainers/testcontainers-java/blob/3ad8d80e2484864e554744a4800a81f6b7982168/core/src/main/java/org/testcontainers/dockerclient/DockerClientConfigUtils.java#L27
+	// see https://github.com/yext/testcontainers-java/blob/3ad8d80e2484864e554744a4800a81f6b7982168/core/src/main/java/org/yext/dockerclient/DockerClientConfigUtils.java#L27
 	cmd := exec.Command("sh", "-c", "ip route|awk '/default/ { print $3 }'")
 	stdout, err := cmd.Output()
 	if err != nil {
